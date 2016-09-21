@@ -1,0 +1,44 @@
+<ion-view title="APPTFG">
+	<ion-content>
+    <div class="row">
+      <div class="col text-center">
+        <button type="button" name="button" class="button button-energized button-outline icon icon-left ion-ios-lightbulb" ng-click="lanterna()">Ligar Lanterna</button>
+      </div>
+    </div>
+		<div class="row">
+			<div class="col text-center">
+				<h2 class="balanced">Acelerômetro</h2>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col col-33">
+				<p>
+					X = {{x}}
+				</p>
+			</div>
+			<div class="col col-33">
+				<p>
+					Y = {{y}}
+				</p>
+			</div>
+			<div class="col col-33">
+				<p>
+					Z = {{z}}
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+					<button type="button" name="button" class="button" ng-click="enviar()">Enviar Dados</button>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col">
+				<p>
+					{{envio}}
+				</p>
+			</div>
+		</div>
+  </ion-content>
+</ion-view>
